@@ -11,9 +11,6 @@ export default function Home() {
       try {
         // Make a GET request to the fakestoreapi.com
         const response = await axios.get('https://fakestoreapi.com/products');
-        
-        // Log the data to the console
-        console.log('Fetched Data:', response.data);
         setData(response.data);
       } catch (error) {
         console.error('Error fetching data:', error);
